@@ -23,4 +23,8 @@ Write-Host -ForegroundColor Cyan "# Starting to generate synopsis files..."
 & ".\_Generate-Synopsis.ps1" -EmustationPath $EmustationPath
 
 Write-Host
+Write-Host -ForegroundColor Cyan "# Starting to rename files..."
+& ".\_Rename-Files.ps1" -EmustationPath $EmustationPath
+
+Write-Host
 Write-Host -ForegroundColor Green "Operation completed successfully!"
