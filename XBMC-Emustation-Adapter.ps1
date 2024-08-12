@@ -14,17 +14,23 @@ if (-Not (Test-Path $EmustationPath)) {
     exit
 }
 
+# Script paths
+$ScriptRoot = $PSScriptRoot
+$MoveMediaScript = Join-Path $ScriptRoot "_Move-Media.ps1"
+$GenerateSynopsisScript = Join-Path $ScriptRoot "_Generate-Synopsis.ps1"
+$RenameFilesScript = Join-Path $ScriptRoot "_Rename-Files.ps1"
+
 Write-Host
 Write-Host -ForegroundColor Cyan "# Starting to move media folders..."
-& ".\_Move-Media.ps1" -EmustationPath $EmustationPath
+& $MoveMediaScript -EmustationPath $EmustationPath
 
 Write-Host
 Write-Host -ForegroundColor Cyan "# Starting to generate synopsis files..."
-& ".\_Generate-Synopsis.ps1" -EmustationPath $EmustationPath
+& $GenerateSynopsisScript -EmustationPath $EmustationPath
 
 Write-Host
 Write-Host -ForegroundColor Cyan "# Starting to rename files..."
-& ".\_Rename-Files.ps1" -EmustationPath $EmustationPath
+& $RenameFilesScript -EmustationPath $EmustationPath
 
 Write-Host
 Write-Host -ForegroundColor Green "Operation completed successfully!"

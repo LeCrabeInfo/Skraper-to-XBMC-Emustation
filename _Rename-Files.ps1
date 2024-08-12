@@ -36,4 +36,4 @@ function Rename-FilesRecursively {
 
 Rename-FilesRecursively -Directory $EmustationPath
 
-Write-Host -ForegroundColor Green "File renaming process completed."
+Write-Host -ForegroundColor Green "Files have been renamed successfully."
