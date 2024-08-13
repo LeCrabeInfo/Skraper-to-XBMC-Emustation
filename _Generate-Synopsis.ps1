@@ -133,6 +133,9 @@ foreach ($SystemDir in $SystemDirs) {
             $OutputContent | Set-Content -Path $OutputFilePath
         }
     }
+
+    # Delete gamelist.xml file
+    Remove-Item -Path $GamelistPath -Force
 }
 
 Write-Host -ForegroundColor Green "Synopsis files have been generated successfully."

@@ -32,6 +32,9 @@ foreach ($SystemDir in $SystemDirs) {
 
     # Move the media files
     Get-ChildItem -Path $SourceMediaPath | Move-Item -Destination $DestinationPath
+
+    # Delete media folder
+    Remove-Item -Path $SourceMediaPath -Force
 }
 
-Write-Host -ForegroundColor Green "media folders have been processed successfully."
+Write-Host -ForegroundColor Green "media folders have been moved successfully."
