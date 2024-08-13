@@ -1,1 +1,1 @@
-# XBMC-Emustation-Adapter
+# XBMC-Emustation-Organizer

@@ -1,10 +1,10 @@
 @echo off
 
 echo ================================
-echo    XBMC-Emustation-Adapter
+echo    XBMC-Emustation-Organizer
 echo ================================
 echo.
-echo This script is designed to adapt your Skraper setup for use with
+echo This script is designed to adapt your emustation folder for use with
 echo XBMC-Emustation. It automates the process of organizing and renaming
 echo files to ensure compatibility with XBMC-Emustation and OG Xbox.
 echo.
@@ -14,7 +14,7 @@ echo Press any key to start...
 pause >nul
 echo.
 
-set "scriptPath=%~dp0XBMC-Emustation-Adapter.ps1"
+set "scriptPath=%~dp0XBMC-Emustation-Organizer.ps1"
 powershell.exe -File "%scriptPath%" %*
 
 echo.
