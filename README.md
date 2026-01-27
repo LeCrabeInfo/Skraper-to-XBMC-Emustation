@@ -2,6 +2,8 @@
 
 **XBMC-Emustation-Organizer** is a set of scripts designed to adapt and organize files exported from [Skraper](https://www.skraper.net/) for compatibility with XBMC-Emustation on the OG Xbox. These scripts automates the process of moving media files, generating detailed synopsis files, and renaming game files to ensure seamless integration with XBMC-Emustation.
 
+A full guide is available on [LeCrabeInfo](https://lecrabeinfo.net/tutoriels/transformer-sa-xbox-1re-gen-en-console-retrogaming-avec-xbmc-emustation/) (French website but nowadays browsers are able to translate on the fly).
+
 ## Usage - Windows
 
 ### Option 1: Command Line
